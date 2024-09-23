@@ -2,7 +2,7 @@
   "about": {
     "description": "Après plus de dix ans d'expérience dans le conseil, notamment au sein de grands cabinets internationaux, j'ai décidé de me lancer dans une nouvelle aventure : le développement web. Ma carrière m'a permis de travailler avec des entreprises de toutes tailles, où j'ai acquis une compréhension approfondie des stratégies digitales et des besoins technologiques des entreprises.\n\nAujourd'hui, grâce à une solide formation en développement web, j'accompagne les TPE et PME dans leur transformation digitale, en les aidant à moderniser leurs systèmes, à améliorer leur visibilité en ligne, et à mettre en place des solutions web adaptées à leurs besoins spécifiques.",
     "linkedin": "https://www.linkedin.com/in/alexandre-husset-61181a/",
-    "photo": "./images/photo.jpg",
+    "photo": "${process.env.PUBLIC_URL}/images/photo.jpg",
     "address": "Paris, France",
     "phone": "07 87 85 05 76",
     "email": "alexandre@husset.fr"
@@ -10,61 +10,61 @@
   "skills": [
     {
       "name": "HTML",
-      "logo": "./images/logo_html.png",
+      "logo": "${process.env.PUBLIC_URL}/images/logo_html.png",
       "summary": "Le HTML (HyperText Markup Language) est le langage de base utilisé pour créer des pages web.",
       "link": "https://developer.mozilla.org/en-US/docs/Web/HTML"
     },
     {
       "name": "CSS",
-      "logo": "./images/logo_css.jpeg",
+      "logo": "${process.env.PUBLIC_URL}/images/logo_css.jpeg",
       "summary": "CSS (Cascading Style Sheets) permet de styliser et de mettre en forme les pages web.",
       "link": "https://developer.mozilla.org/en-US/docs/Web/CSS"
     },
     {
       "name": "JavaScript",
-      "logo": "./images/logo_js.png",
+      "logo": "${process.env.PUBLIC_URL}/images/logo_js.png",
       "summary": "JavaScript est un langage de programmation utilisé pour rendre les pages web interactives.",
       "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
     },
     {
       "name": "React",
-      "logo": "./images/logo_react.png",
+      "logo": "${process.env.PUBLIC_URL}/images/logo_react.png",
       "summary": "React est une bibliothèque JavaScript pour la création d'interfaces utilisateur dynamiques.",
       "link": "https://reactjs.org/"
     },
     {
       "name": "Node.js",
-      "logo": "./images/logo_node.png",
+      "logo": "${process.env.PUBLIC_URL}/images/logo_node.png",
       "summary": "Node.js est un environnement d'exécution JavaScript côté serveur permettant de construire des applications rapides et évolutives.",
       "link": "https://nodejs.org/"
     },
     {
       "name": "Docker",
-      "logo": "./images/logo_docker.jpeg",
+      "logo": "${process.env.PUBLIC_URL}/images/logo_docker.jpeg",
       "summary": "Docker permet de containeriser les applications pour garantir qu'elles fonctionnent de manière identique dans différents environnements.",
       "link": "https://www.docker.com/"
     },
     {
       "name": "Kubernetes",
-      "logo": "./images/logo_kube.png",
+      "logo": "${process.env.PUBLIC_URL}/images/logo_kube.png",
       "summary": "Kubernetes est un système de gestion d'orchestration pour automatiser le déploiement, la mise à l'échelle et la gestion des conteneurs.",
       "link": "https://kubernetes.io/"
     },
     {
       "name": "MongoDB",
-      "logo": "./images/logo_mongodb.png",
+      "logo": "${process.env.PUBLIC_URL}/images/logo_mongodb.png",
       "summary": "MongoDB est une base de données NoSQL orientée documents, qui permet de stocker des données dans des documents flexibles de type JSON.",
       "link": "https://www.mongodb.com/"
     },
     {
       "name": "Figma",
-      "logo": "./images/logo_figma.jpeg",
+      "logo": "${process.env.PUBLIC_URL}/images/logo_figma.jpeg",
       "summary": "Figma est un outil de conception d'interface utilisateur basé sur le cloud, permettant de créer des maquettes, des prototypes interactifs et des systèmes de design collaboratifs.",
       "link": "https://www.figma.com/"
     },
     {
       "name": "PostgreSQL",
-      "logo": "./images/logo_postgresql.png",
+      "logo": "${process.env.PUBLIC_URL}/images/logo_postgresql.png",
       "summary": "PostgreSQL est une base de données relationnelle open-source robuste, réputée pour sa conformité SQL et sa flexibilité.",
       "link": "https://www.postgresql.org/"
     }
@@ -72,7 +72,7 @@
   "projects": [
     {
       "name": "Booki",
-      "image": "./images/booki.png",
+      "image": ".${process.env.PUBLIC_URL}/images/booki.png",
       "description": "J’ai travaillé sur le développement du site Internet de Booki, une plateforme permettant aux utilisateurs de trouver des hébergements et des activités touristiques dans diverses villes. Mon rôle a consisté à intégrer l’interface du site en respectant les maquettes fournies, en utilisant uniquement HTML et CSS. Le site devait être entièrement responsive, s’adaptant aux ordinateurs, tablettes et smartphones, tout en offrant une expérience utilisateur fluide et intuitive.",
       "learned": "Ce projet m'a permis de renforcer mes compétences en intégration d'interfaces en HTML et CSS, en particulier sur le design responsive, et de veiller à ce que le site fonctionne de manière optimale sur tous les appareils.",
       "skills": "HTML, CSS, Responsive Design, Figma",
@@ -80,7 +80,7 @@
     },
     {
       "name": "Kasa",
-      "image": "./images/kasa.png",
+      "image": "${process.env.PUBLIC_URL}/images/kasa.png",
       "description": "J'ai travaillé en tant que développeur front-end freelance pour Kasa, une entreprise de location d'appartements entre particuliers. Le projet visait à refondre entièrement le site web, en passant d'une ancienne stack ASP.NET à une stack JavaScript moderne avec Node.js côté back-end et React côté front-end.",
       "learned": "Dans ce projet, j'ai développé l'interface utilisateur avec React et configuré la navigation entre les pages avec React Router. J'ai appris à manipuler des données simulées extraites d'un fichier JSON et à utiliser Create React App pour initier le projet. J'ai également approfondi mes compétences en React et en routage web moderne.",
       "skills": "React, JavaScript, React Router, Node.js, Figma",
@@ -88,7 +88,7 @@
     },
     {
       "name": "Mon Vieux Grimoire",
-      "image": "./images/grimoire.png",
+      "image": "${process.env.PUBLIC_URL}/images/grimoire.png",
       "description": "En tant que développeur back-end freelance, j'ai travaillé sur le projet Mon Vieux Grimoire, un site de notation de livres pour une petite chaîne de librairies. J'étais chargé de développer le back-end en utilisant Express et MongoDB. J'ai mis en place la gestion des livres et des notations, ainsi que l'authentification sécurisée des utilisateurs et l'optimisation des images.",
       "learned": "Ce projet m'a permis de renforcer mes compétences en développement back-end, en particulier dans l'implémentation d'Express et de MongoDB, ainsi que dans la mise en place de systèmes d'authentification et la gestion des opérations CRUD. J'ai également suivi une architecture MVC et appliqué les bonnes pratiques du Green Code.",
       "skills": "Express, MongoDB, Mongoose, Node.js, Green Code",
