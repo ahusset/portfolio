@@ -2,6 +2,10 @@ import React from 'react';
 import './Header.css';
 
 function Header({ photo, linkedin, openModal }) {
+    // Affichez les valeurs dans la console
+    console.log('PUBLIC_URL:', process.env.PUBLIC_URL);
+    console.log('Photo URL:', photo);
+
     return (
         <header className="header">
             <div className="header-left">
