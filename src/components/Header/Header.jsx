@@ -6,8 +6,7 @@ function Header({ photo, linkedin, openModal }) {
         <header className="header">
             <div className="header-left">
                 {/* Ajout de process.env.PUBLIC_URL pour gérer correctement les chemins */}
-                <img src={`${process.env.PUBLIC_URL}${photo}`} alt="Alexandre Husset" className="header-photo" />
-                <a href={linkedin} target="_blank" rel="noopener noreferrer">
+                    <img src={photo} alt="Alexandre Husset" className="header-photo" />                <a href={linkedin} target="_blank" rel="noopener noreferrer">
                     {/* Ajout de process.env.PUBLIC_URL pour le logo LinkedIn */}
                     <img src={`${process.env.PUBLIC_URL}/images/linkedin-logo.png`} alt="LinkedIn" className="linkedin-logo" />
                 </a>
