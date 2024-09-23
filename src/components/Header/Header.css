@@ -1,0 +1,68 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #282c34;
+    color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 80px; /* Fixer une hauteur pour éviter que le contenu soit coupé */
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.linkedin-logo {
+    width: 25px;
+    height: 25px;
+}
+
+.header-right {
+    display: flex;
+    gap: 20px;
+    align-items: center; /* S'assurer que les éléments sont bien centrés verticalement */
+}
+
+.header-right a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+.header-right a:hover {
+    color: #61dafb;
+}
+
+/* Media Query pour mobile */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Affichage vertical du header */
+        height: auto; /* Ajuste la hauteur pour s'adapter au contenu */
+        padding: 10px;
+    }
+
+    .header-left {
+        display: none; /* Cache la photo et LinkedIn sur mobile */
+    }
+
+    .header-right {
+        flex-direction: column; /* Menu vertical */
+        gap: 10px;
+    }
+}

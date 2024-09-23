@@ -1,9 +1,10 @@
 import React from 'react';
+import './Footer.css';
 
 const Footer = () => {
     return (
         <footer>
-            <p>Contactez-moi : <a href="mailto:email@example.com">email@example.com</a></p>
+            <p>© 2024 Portfolio Alexandre Husset</p>
         </footer>
     );
 };

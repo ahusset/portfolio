@@ -1,22 +1,24 @@
 import React from 'react';
+import './Header.css';
 
-const Header = ({ photo, linkedin }) => {
+function Header({ photo, linkedin, openModal }) {
     return (
         <header className="header">
             <div className="header-left">
-                <img src={photo} alt="Moi" className="header-photo" />
+                <img src={photo} alt="Alexandre Husset" className="header-photo" />
                 <a href={linkedin} target="_blank" rel="noopener noreferrer">
                     <img src="/images/linkedin-logo.png" alt="LinkedIn" className="linkedin-logo" />
                 </a>
             </div>
-            <nav className="header-right">
+            <div className="header-right">
                 <a href="#about">À propos</a>
-                <a href="#skills">Compétences</a>
                 <a href="#projects">Projets</a>
-                <a href="#contact">Contact</a>
-            </nav>
+                <a href="#skills">Compétences</a>
+                {/* Utilisation d'un lien pour le contact */}
+                <a href="#contact" onClick={(e) => { e.preventDefault(); openModal(); }}>Contact</a>
+            </div>
         </header>
     );
-};
+}
 
 export default Header;
