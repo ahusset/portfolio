@@ -2,15 +2,12 @@ import React from 'react';
 import './Header.css';
 
 function Header({ photo, linkedin, openModal }) {
-    // Affichez les valeurs dans la console
-    console.log('PUBLIC_URL:', process.env.PUBLIC_URL);
-    console.log('Photo URL:', photo);
 
     return (
         <header className="header">
             <div className="header-left">
                 {/* Ajout de process.env.PUBLIC_URL pour la photo */}
-                <img src={`${process.env.PUBLIC_URL}${photo}`} alt="Alexandre Husset" className="header-photo" />
+                <img src={`${process.env.PUBLIC_URL}/images/photo.jpg`} alt="Alexandre Husset" className="header-photo" />
                 <a href={linkedin} target="_blank" rel="noopener noreferrer">
                     {/* Ajout de process.env.PUBLIC_URL pour le logo LinkedIn */}
                     <img src={`${process.env.PUBLIC_URL}/images/linkedin-logo.png`} alt="LinkedIn" className="linkedin-logo" />
