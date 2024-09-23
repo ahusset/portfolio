@@ -16,7 +16,7 @@ const Projects = ({ projects }) => {
                         <div className="project-columns">
                             <div className="project-left">
                                 {/* Suppression de process.env.PUBLIC_URL ici */}
-                                <img src={project.image} alt={project.name} className="project-image" />
+                                <img src={`${project.image}`} alt={project.name} className="project-image" />
                                 <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
                                     Voir sur GitHub
                                 </a>
