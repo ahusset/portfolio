@@ -1,7 +1,6 @@
 import React from 'react';
 import './ModalContact.css';
 
-
 function ModalContact({ isOpen, onClose, photo, linkedin, phone, email, address }) {
     if (!isOpen) return null;
 
@@ -17,9 +16,11 @@ function ModalContact({ isOpen, onClose, photo, linkedin, phone, email, address 
                 <button className="close-btn" onClick={onClose}>X</button>
                 <div className="modal-body">
                     <div className="modal-left">
-                        <img src={photo} alt="Alexandre Husset" className="profile-photo" />
+                        {/* Ajout de process.env.PUBLIC_URL pour la photo */}
+                        <img src={`${process.env.PUBLIC_URL}${photo}`} alt="Alexandre Husset" className="profile-photo" />
                         <a href={linkedin} target="_blank" rel="noopener noreferrer">
-                            <img src="/images/linkedin-logo.png" alt="LinkedIn" className="linkedin-logo" />
+                            {/* Ajout de process.env.PUBLIC_URL pour le logo LinkedIn */}
+                            <img src={`${process.env.PUBLIC_URL}/images/linkedin-logo.png`} alt="LinkedIn" className="linkedin-logo" />
                         </a>
                     </div>
                     <div className="modal-right">
