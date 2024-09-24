@@ -56,7 +56,7 @@
     .header {
         flex-direction: column;
         height: auto; /* Adaptation de la hauteur */
-        padding: 10px; /* Réduction du padding pour mobile */
+        padding: 50px 10px;
     }
 
     /* Masquer la photo et le logo LinkedIn sur mobile */
