@@ -69,7 +69,8 @@
         display: flex;
         flex-direction: column; /* Menu en vertical */
         align-items: center; /* Centrer les liens */
-        gap: 10px; /* Espacement entre les liens */
+        gap: 5px; /* Espacement entre les liens */
+        padding: 5px;
     }
 
     .header-right a {
