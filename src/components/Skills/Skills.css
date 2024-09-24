@@ -61,7 +61,4 @@
         flex-direction: column; /* Affichage en colonne sur mobile */
         gap: 20px;
     }
-    .skills-section {
-        padding-top: 100px; /* Augmente le padding en haut pour mobile */
-    }
 }

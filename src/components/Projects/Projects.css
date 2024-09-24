@@ -79,9 +79,7 @@
         flex-direction: column;
         gap: 20px;
     }
-    .projects-section {
-        padding-top: 100px; /* Augmente le padding en haut pour mobile */
-    }
+
     .project-left, .project-right {
         width: 100%; /* Sur mobile, chaque colonne prend toute la largeur */
     }

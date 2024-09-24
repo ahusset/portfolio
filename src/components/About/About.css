@@ -32,10 +32,3 @@
     line-height: 1.6;
     color: #333;
 }
-
-/* Responsive design pour les écrans plus petits */
-@media (max-width: 768px) {
-    .about-section {
-        padding-top: 100px; /* Augmente le padding en haut pour mobile */
-    }
-}
