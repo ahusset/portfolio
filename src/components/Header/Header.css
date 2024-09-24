@@ -1,3 +1,4 @@
+/* Styles généraux pour le header */
 .header {
     display: flex;
     justify-content: space-between;
@@ -10,11 +11,11 @@
     top: 0;
     left: 0;
     z-index: 1000;
+    height: 80px;
     box-sizing: border-box;
-    overflow: hidden;
-    height: 80px; /* Fixer une hauteur pour éviter que le contenu soit coupé */
 }
 
+/* Photo de profil et logo LinkedIn */
 .header-left {
     display: flex;
     align-items: center;
@@ -32,10 +33,11 @@
     height: 25px;
 }
 
+/* Liens du menu */
 .header-right {
     display: flex;
     gap: 20px;
-    align-items: center; /* S'assurer que les éléments sont bien centrés verticalement */
+    align-items: center;
 }
 
 .header-right a {
@@ -49,20 +51,28 @@
     color: #61dafb;
 }
 
-/* Media Query pour mobile */
+/* Responsive: Ajuster la hauteur pour mobile */
 @media (max-width: 768px) {
     .header {
-        flex-direction: column; /* Affichage vertical du header */
-        height: auto; /* Ajuste la hauteur pour s'adapter au contenu */
-        padding: 10px;
+        flex-direction: column;
+        height: auto; /* Adaptation de la hauteur */
+        padding: 10px; /* Réduction du padding pour mobile */
     }
 
+    /* Masquer la photo et le logo LinkedIn sur mobile */
     .header-left {
-        display: none; /* Cache la photo et LinkedIn sur mobile */
+        display: none;
     }
 
+    /* Afficher les liens en vertical */
     .header-right {
-        flex-direction: column; /* Menu vertical */
-        gap: 10px;
+        display: flex;
+        flex-direction: column; /* Menu en vertical */
+        align-items: center; /* Centrer les liens */
+        gap: 10px; /* Espacement entre les liens */
+    }
+
+    .header-right a {
+        font-size: 1.2em; /* Taille des liens plus grande sur mobile */
     }
 }
