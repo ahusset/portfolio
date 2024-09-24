@@ -17,7 +17,7 @@ function ModalContact({ isOpen, onClose, photo, linkedin, phone, email, address 
                 <div className="modal-body">
                     <div className="modal-left">
                         {/* Ajout de process.env.PUBLIC_URL pour la photo */}
-                        <img src={`${process.env.PUBLIC_URL}${photo}`} alt="Alexandre Husset" className="profile-photo" />
+                        <img src={`${photo}`} alt="Alexandre Husset" className="profile-photo" />
                         <a href={linkedin} target="_blank" rel="noopener noreferrer">
                             {/* Ajout de process.env.PUBLIC_URL pour le logo LinkedIn */}
                             <img src={`${process.env.PUBLIC_URL}/images/linkedin-logo.png`} alt="LinkedIn" className="linkedin-logo" />

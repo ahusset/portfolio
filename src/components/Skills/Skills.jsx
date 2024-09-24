@@ -13,7 +13,7 @@ const Skills = ({ skills }) => {
                 {skills.map((skill, index) => (
                     <div key={index} className="skill-card">
                         {/* Ajout de process.env.PUBLIC_URL pour les logos */}
-                        <img src={`${process.env.PUBLIC_URL}${skill.logo}`} alt={skill.name} className="skill-logo" />
+                        <img src={`${skill.logo}`} alt={skill.name} className="skill-logo" />
                         <h3>{skill.name}</h3>
                         <p className="skill-summary">{skill.summary}</p>
                         <a href={skill.link} target="_blank" rel="noopener noreferrer" className="skill-link">
